@@ -1,0 +1,1 @@
+export PATH="$GRAILS_HOME/bin:$PATH"

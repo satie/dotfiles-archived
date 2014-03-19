@@ -1,0 +1,1 @@
+export PATH="$EC2_HOME/bin:$PATH"
