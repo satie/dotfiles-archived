@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Quick shortcut to update DNS settings.
+#
+# Update OS X DNS server priority for Wi-Fi adapter.
+# Sets google DNS servers to have the highest priority as a default.
+#
+# USAGE:
+#
+#   $ dns-update
+#   # => changes DNS settings to default
+#
+#   $ dns-update hcentive
+#   # => changes DNS settings to hcentive
+
+if [ "$1" = "" ] ; then
+  sudo networksetup -setdnsservers Wi-Fi $DEFAULT_DNS
+else
+  sudo networksetup -setdnsservers Wi-Fi $HCENTIVE_DNS
+fi

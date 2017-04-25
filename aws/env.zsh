@@ -1,7 +1,14 @@
 export EC2_HOME=/usr/local/aws
 export AWS_CONFIG_HOME=$HOME/.aws
+# export AWS_CONFIG_HOME=$HOME/.aws.phix-dev-kms-tomcat-admin
 export AWS_CONFIG_FILE=$AWS_CONFIG_HOME/config
+export AWS_CREDENTIAL_PROFILES_FILE=$AWS_CONFIG_HOME/config
 export AWS_ACCESS_KEY_ID=$(cat $AWS_CONFIG_HOME/access)
 export AWS_SECRET_ACCESS_KEY=$(cat $AWS_CONFIG_HOME/secret)
 export AWS_REGION=$(cat $AWS_CONFIG_HOME/region)
 export AWS_DEFAULT_REGION=$AWS_REGION
+# export AWS_KMS_KEY_ALIAS=alias/net/hcinternal/dev/phix
+# export AWS_KMS_KEY_ALIAS=alias/net/hcinternal/dev/techops
+# export AWS_KMS_ENCRYPTION_CONTEXT='{"product":"phix","tenant":"product","stack":"dev","context":"hcus-osx-011.hcentive.com"}'
+# export AWS_KMS_ENCRYPTION_CONTEXT='{"product":"phix","tenant":"cp","stack":"sit","context":"cp-phix-app-sit3.hcinternal.net"}'
+# export AWS_KMS_KEY_SPEC=AES_256
