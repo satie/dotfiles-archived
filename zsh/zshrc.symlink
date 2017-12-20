@@ -53,3 +53,9 @@ export PATH="/opt/chefdk/bin:/opt/chefdk/embedded/bin:$PATH"
 [[ -s "/Users/satyendra/.gvm/bin/gvm-init.sh" ]] && source "/Users/satyendra/.gvm/bin/gvm-init.sh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+PATH="/Users/satyendra/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/satyendra/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/satyendra/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/satyendra/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/satyendra/perl5"; export PERL_MM_OPT;
