@@ -47,15 +47,11 @@ unset config_files
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval "$(chef shell-init zsh)"
-export PATH="/opt/chefdk/bin:/opt/chefdk/embedded/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/satyendra/.gvm/bin/gvm-init.sh" ]] && source "/Users/satyendra/.gvm/bin/gvm-init.sh"
+# [[ -s "/Users/satyendra/.gvm/bin/gvm-init.sh" ]] && source "/Users/satyendra/.gvm/bin/gvm-init.sh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-PATH="/Users/satyendra/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/satyendra/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/satyendra/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/satyendra/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/satyendra/perl5"; export PERL_MM_OPT;
+# default to stable version of node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
