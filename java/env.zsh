@@ -1,2 +1,1 @@
-export JAVA_LIB=$HOME/Library/Extensions/Java/lib
-export GRAILS_HOME=$HOME/Documents/Installs/grails-2.3.7
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
