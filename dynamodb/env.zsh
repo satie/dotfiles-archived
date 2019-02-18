@@ -1,0 +1,1 @@
+export DYNAMODB_LOCAL_HOME=~/Applications/dynamodb_local_latest
