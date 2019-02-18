@@ -1,1 +1,0 @@
-export PATH="$DYNAMODB_LOCAL_HOME:$PATH"
