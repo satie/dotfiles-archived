@@ -1,5 +1,5 @@
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/myprojects
@@ -46,10 +46,8 @@ done
 unset config_files
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-eval "$(chef shell-init zsh)"
-export PATH="/opt/chefdk/bin:/opt/chefdk/embedded/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/satyendra/.gvm/bin/gvm-init.sh" ]] && source "/Users/satyendra/.gvm/bin/gvm-init.sh"
+[[ -s "/Users/satie/.gvm/bin/gvm-init.sh" ]] && source "/Users/satie/.gvm/bin/gvm-init.sh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

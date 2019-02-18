@@ -1,1 +1,0 @@
-export PATH="$PATH:$ARCANIST_HOME/bin"
